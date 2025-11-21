@@ -1,0 +1,224 @@
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt.zip.
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+tokenizer_config.json: 2.32kB [00:00, 11.4MB/s]
+spiece.model: 100% 792k/792k [00:00<00:00, 7.35MB/s]
+tokenizer.json: 1.39MB [00:00, 99.2MB/s]
+Loading pretrained T5-small for fine-tuning...
+config.json: 1.21kB [00:00, 7.38MB/s]
+model.safetensors: 100% 242M/242M [00:01<00:00, 184MB/s]
+generation_config.json: 100% 147/147 [00:00<00:00, 1.23MB/s]
+Total parameters: 60,506,624
+Trainable parameters: 60,506,624
+100% 265/265 [00:42<00:00,  6.27it/s]
+Epoch 0: Average train loss was 2.5723379363468886
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:13<00:00,  4.87s/it]
+466it [00:01, 389.13it/s]
+Epoch 0: Dev loss: 0.35536925278057, Record F1: 0.12948366695526278, Record EM: 0.1223175965665236, SQL EM: 0.0
+Epoch 0: 87.12% of the generated outputs led to SQL errors
+100% 265/265 [00:41<00:00,  6.41it/s]
+Epoch 1: Average train loss was 0.32382499616959204
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:10<00:00,  4.70s/it]
+465it [02:00,  3.87it/s]
+Epoch 1: Dev loss: 0.1442330637296084, Record F1: 0.3405106704152227, Record EM: 0.27682403433476394, SQL EM: 0.002145922746781116
+Epoch 1: 47.00% of the generated outputs led to SQL errors
+100% 265/265 [00:42<00:00,  6.29it/s]
+Epoch 2: Average train loss was 0.17464024885087404
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [00:59<00:00,  3.97s/it]
+466it [01:02,  7.45it/s]
+Epoch 2: Dev loss: 0.09612399342403083, Record F1: 0.46464361829810413, Record EM: 0.37124463519313305, SQL EM: 0.006437768240343348
+Epoch 2: 31.12% of the generated outputs led to SQL errors
+100% 265/265 [00:42<00:00,  6.31it/s]
+Epoch 3: Average train loss was 0.12485269160540971
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:05<00:00,  4.36s/it]
+462it [02:00,  3.85it/s]
+Epoch 3: Dev loss: 0.07593680771581528, Record F1: 0.5235610416686844, Record EM: 0.43776824034334766, SQL EM: 0.015021459227467811
+Epoch 3: 26.82% of the generated outputs led to SQL errors
+100% 265/265 [00:42<00:00,  6.27it/s]
+Epoch 4: Average train loss was 0.09954120397257638
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:02<00:00,  4.18s/it]
+462it [02:00,  3.85it/s]
+Epoch 4: Dev loss: 0.06530235687184797, Record F1: 0.5363488362565695, Record EM: 0.44635193133047213, SQL EM: 0.017167381974248927
+Epoch 4: 27.04% of the generated outputs led to SQL errors
+100% 265/265 [00:43<00:00,  6.09it/s]
+Epoch 5: Average train loss was 0.08333658123090419
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:15<00:00,  5.01s/it]
+464it [02:00,  3.87it/s]
+Epoch 5: Dev loss: 0.056002251886675194, Record F1: 0.5741374052614823, Record EM: 0.4892703862660944, SQL EM: 0.017167381974248927
+Epoch 5: 21.67% of the generated outputs led to SQL errors
+100% 265/265 [00:43<00:00,  6.13it/s]
+Epoch 6: Average train loss was 0.071920658973579
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:15<00:00,  5.01s/it]
+464it [02:00,  3.87it/s]
+Epoch 6: Dev loss: 0.0495533899623959, Record F1: 0.649377983946835, Record EM: 0.5686695278969958, SQL EM: 0.017167381974248927
+Epoch 6: 17.17% of the generated outputs led to SQL errors
+100% 265/265 [00:42<00:00,  6.19it/s]
+Epoch 7: Average train loss was 0.06393759126832553
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:18<00:00,  5.24s/it]
+465it [02:00,  3.87it/s]
+Epoch 7: Dev loss: 0.043046654524504666, Record F1: 0.6797169888822707, Record EM: 0.6072961373390557, SQL EM: 0.019313304721030045
+Epoch 7: 15.02% of the generated outputs led to SQL errors
+100% 265/265 [00:43<00:00,  6.15it/s]
+Epoch 8: Average train loss was 0.05590676601956272
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:22<00:00,  5.53s/it]
+464it [02:00,  3.87it/s]
+Epoch 8: Dev loss: 0.03892267829778243, Record F1: 0.6868772446514996, Record EM: 0.6223175965665236, SQL EM: 0.017167381974248927
+Epoch 8: 14.38% of the generated outputs led to SQL errors
+100% 265/265 [00:43<00:00,  6.11it/s]
+Epoch 9: Average train loss was 0.050834661184108995
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:25<00:00,  5.70s/it]
+466it [00:44, 10.46it/s]
+Epoch 9: Dev loss: 0.0361719017878504, Record F1: 0.6883525690653904, Record EM: 0.628755364806867, SQL EM: 0.017167381974248927
+Epoch 9: 14.59% of the generated outputs led to SQL errors
+100% 265/265 [00:43<00:00,  6.07it/s]
+Epoch 10: Average train loss was 0.047244254636186166
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:22<00:00,  5.51s/it]
+462it [02:00,  3.85it/s]
+Epoch 10: Dev loss: 0.03376834919000204, Record F1: 0.7166871391107336, Record EM: 0.6609442060085837, SQL EM: 0.02145922746781116
+Epoch 10: 11.37% of the generated outputs led to SQL errors
+100% 265/265 [00:45<00:00,  5.84it/s]
+Epoch 11: Average train loss was 0.04282059783361675
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:39<00:00,  6.66s/it]
+461it [02:00,  3.84it/s]
+Epoch 11: Dev loss: 0.03189214374351519, Record F1: 0.7287350713205101, Record EM: 0.6738197424892703, SQL EM: 0.017167381974248927
+Epoch 11: 11.59% of the generated outputs led to SQL errors
+100% 265/265 [00:48<00:00,  5.42it/s]
+Epoch 12: Average train loss was 0.04011001136986567
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [02:01<00:00,  8.08s/it]
+463it [02:00,  3.86it/s]
+Epoch 12: Dev loss: 0.03065528248888978, Record F1: 0.7453284939854369, Record EM: 0.6952789699570815, SQL EM: 0.017167381974248927
+Epoch 12: 13.95% of the generated outputs led to SQL errors
+100% 265/265 [00:49<00:00,  5.38it/s]
+Epoch 13: Average train loss was 0.038309300981806696
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [01:58<00:00,  7.88s/it]
+462it [02:00,  3.85it/s]
+Epoch 13: Dev loss: 0.029173015534024474, Record F1: 0.7418967416093862, Record EM: 0.6952789699570815, SQL EM: 0.019313304721030045
+Epoch 13: 11.37% of the generated outputs led to SQL errors
+100% 265/265 [00:49<00:00,  5.34it/s]
+Epoch 14: Average train loss was 0.03633630924890397
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [02:19<00:00,  9.31s/it]
+464it [02:00,  3.87it/s]
+Epoch 14: Dev loss: 0.028560955585100856, Record F1: 0.749541671462619, Record EM: 0.7081545064377682, SQL EM: 0.019313304721030045
+Epoch 14: 11.80% of the generated outputs led to SQL errors
+100% 265/265 [00:50<00:00,  5.24it/s]
+Epoch 15: Average train loss was 0.03539246261343938
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [02:08<00:00,  8.54s/it]
+463it [02:00,  3.86it/s]
+Epoch 15: Dev loss: 0.028007282426374184, Record F1: 0.7524964581157223, Record EM: 0.7124463519313304, SQL EM: 0.019313304721030045
+Epoch 15: 11.80% of the generated outputs led to SQL errors
+100% 265/265 [00:52<00:00,  5.07it/s]
+Epoch 16: Average train loss was 0.03447951107465419
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [02:20<00:00,  9.33s/it]
+463it [02:00,  3.86it/s]
+Epoch 16: Dev loss: 0.02760615045078494, Record F1: 0.7583741821317288, Record EM: 0.7145922746781116, SQL EM: 0.019313304721030045
+Epoch 16: 11.16% of the generated outputs led to SQL errors
+100% 265/265 [00:53<00:00,  4.92it/s]
+Epoch 17: Average train loss was 0.03379399299630676
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [02:35<00:00, 10.37s/it]
+463it [02:00,  3.86it/s]
+Epoch 17: Dev loss: 0.027376223598250732, Record F1: 0.7561349584129645, Record EM: 0.7145922746781116, SQL EM: 0.019313304721030045
+Epoch 17: 13.09% of the generated outputs led to SQL errors
+100% 265/265 [00:54<00:00,  4.90it/s]
+Epoch 18: Average train loss was 0.033330769694927084
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [02:50<00:00, 11.38s/it]
+464it [02:00,  3.87it/s]
+Epoch 18: Dev loss: 0.027401270746676892, Record F1: 0.752151006202437, Record EM: 0.7103004291845494, SQL EM: 0.019313304721030045
+Epoch 18: 13.73% of the generated outputs led to SQL errors
+100% 265/265 [00:57<00:00,  4.62it/s]
+Epoch 19: Average train loss was 0.033026865156353565
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [02:47<00:00, 11.18s/it]
+464it [02:00,  3.87it/s]
+Epoch 19: Dev loss: 0.027410596913338234, Record F1: 0.7530093752942827, Record EM: 0.7103004291845494, SQL EM: 0.019313304721030045
+Epoch 19: 13.52% of the generated outputs led to SQL errors
+Loading model from checkpoints/ft_experiments/ft_experiment/best_model
+/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Evaluating:   0% 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:535: UserWarning: `num_beams` is set to 1. However, `early_stopping` is set to `True` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `early_stopping`.
+  warnings.warn(
+Evaluating: 100% 15/15 [02:51<00:00, 11.40s/it]
+463it [02:00,  3.86it/s]
+Dev set results: Loss: {dev_loss}, Record F1: {dev_record_f1}, Record EM: {dev_record_em}, SQL EM: {dev_sql_em}
+Dev set results: 11.16% of the generated outputs led to SQL errors
+Test Inference: 100% 14/14 [05:03<00:00, 21.67s/it]
+Generated 432 test queries
+431it [02:00,  3.59it/s]
+Test results saved to results/t5_ft_ft_experiment_test.sql and records/t5_ft_ft_experiment_test.pkl

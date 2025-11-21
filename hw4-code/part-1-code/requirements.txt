@@ -1,0 +1,14 @@
+transformers==4.26.1
+datasets==2.9.0
+torch==1.13.1
+evaluate==0.4.0
+scikit-learn==1.2.1
+nltk==3.8.1
+
+# --- Dependencies ---
+numpy==1.23.5
+pandas==1.5.3
+fsspec==2022.11.0
+pyarrow==10.0.1
+tokenizers==0.13.2
+tqdm==4.66.1
